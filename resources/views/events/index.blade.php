@@ -6,7 +6,7 @@
 @section('content')
 
     <div class="text-center p-2">
-            <h1>Lembranças</h1>
+            <h1>Lembranças -h</h1>
     </div>
     <div class="row text-center mt-5">
         
