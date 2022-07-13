@@ -57,6 +57,7 @@ Route::get('/birthday/edit/{id}', [BirthdaysController::class, 'edit']);
 Route::post('/birthday/edit/{id}', [BirthdaysController::class, 'update']);
 Route::get('/birthday/delete/{id}', [BirthdaysController::class, 'delete']);
 Route::post('/birthday/delete/{id}', [BirthdaysController::class, 'destroy']);
+Route::get('/birthday/order/{id}', [BirthdaysController::class, 'order']); //função para ordenar a tabela
 
 //Rotas Fotos
 Route::get('/events', [EventsController::class, 'index']);

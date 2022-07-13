@@ -22,7 +22,8 @@ class BirthdaysController extends Controller
 
     public function create()
     {
-        return view('birthdays.create');
+        $item = Birthday::all();
+        return view('birthdays.create', compact('item'));
     }
 
     public function store(BirthdayRequest $request)
@@ -73,6 +74,6 @@ class BirthdaysController extends Controller
     public function order($id)
     {
         $item = Birthday::orderBy($id, 'asc')->get();
-        return view('birthdays.index', compact('item'));
+        return view('birthdays.create', compact('item'));
     }
 }
