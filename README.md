@@ -7,6 +7,8 @@
 <p>Exibição de fotos usando carrocel.</p>
 <p>Cadastro de funcionários, exibição em lista dos cadastrados, com autenticação para acesso.</p>
 <h3>Falta fazer.</h3>
+<p>Redirecionamento Login usuário.</p>
+<p>Arrumar dashboard usuario</p>
 <p>Requests de validação.</p>
 <p>Incorporar agenda de compromissos.(FullCalendar)</p>
 <p>Comentários na exibição das fotos.</p>
