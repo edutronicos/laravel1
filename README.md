@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1>Crud Simples</h1>
 <p>Cadastro de E-mails, com exibição em lista.</p>
 <p>Cadastro de Ramais, com exibição em lista.</p>
@@ -12,4 +13,6 @@
 <p>Comentários na exibição das fotos.</p>
 <h3>Login:</h3>
 <p>administrador@email.com</p>
+<p>12345678</p>
+<p>usuario@email.com</p>
 <p>12345678</p>
