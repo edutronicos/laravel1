@@ -52,7 +52,12 @@
                 <button class="btn btn-primary" type="submit">Salvar Fotos</button>
             </div>
         </form>
-        <div id="thumb-output"></div>
+
+            
+                    <div id="thumb-output"></div>
+                
+
     </div>
+    
     
 @endsection

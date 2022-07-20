@@ -36,12 +36,20 @@
     <div class="col justify-content-center">
         <div class="mb-3 mt-3">
             <h3>Comente, descreva como foi o dia do evento.</h3>
-            <div class="col-6 mb-3 mt-3">
-                <input type="text" class="form-control" name="comments_name" id="comments_name" aria-describedby="helpId" placeholder="Insira seu nome.">
-            </div>
-            <div class="col-6 mb-3">
-                  <textarea class="form-control" name="comments_text" id="comments_text" rows="6" placeholder="Deixe seu comentário sobre o evento."></textarea>
+                @auth
+                    <div class="col-6 mb-3 mt-3">
+                        <input type="text" class="form-control" name="comments_name" id="comments_name" aria-describedby="helpId" placeholder="Insira seu nome.">
+                    </div>
+                    <div class="col-6 mb-3">
+                    <textarea class="form-control" name="comments_text" id="comments_text" rows="6" placeholder="Deixe seu comentário sobre o evento."></textarea>
+                    </div>
+                @endauth
+                @guest
+                <div class="col-6 mb-3 mt-5">
+                    <h5>Faça Login para comentar</h5> <a class="btn btn-primary" href='/login'>Login</a>
                 </div>
+                @endguest
+                
             </div>
         </div>
     </div>
