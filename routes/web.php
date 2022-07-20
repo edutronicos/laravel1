@@ -75,7 +75,7 @@ Route::post('/recru/novo', [RecruitmentsController::class, 'store']);
 Route::get('/recru/cadastro/{id}', [RecruitmentsController::class, 'show'])->middleware('auth');
 Route::get('/recru/lista', [RecruitmentsController::class, 'show2']);
 
-Route::middleware([
+/*Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
     'verified'
@@ -83,4 +83,6 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
-});
+});*/
+
+Route::get('/dashboard', [BirthdaysController::class, 'index'])->middleware('auth');

@@ -17,11 +17,12 @@ class RecruitmentsController extends Controller
     {
         $cadas = new Recruitment;
         $user = auth()->user();
-        $cadas->user_id = $user->id;
+        
 
         Recruitment::create
         ([
             'user_id' => $user->id,
+            'name' => $user->name,
             'contrato' => $request->contrato,
             'cliente' => $request->cliente,
             'nome_candidato' => $request->nome_candidato,

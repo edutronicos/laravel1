@@ -29,7 +29,7 @@
                 <td>{{$cadastro->nome_candidato}}</td>
                 <td>{{$cadastro->local_unidade}}</td>
                 <td>{{$cadastro->user_id}}</td>
-                <td>{{ $cadastro->id }}</td>
+                <td>{{ $cadastro->name }}</td>
                 <td><a href="/recru/cadastro/{{ $cadastro->id }}" class="btn btn-primary">Abrir</a></td>
         @endforeach
             </tr>

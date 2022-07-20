@@ -17,7 +17,7 @@ class Recruitment extends Model
         'observacao', 'rg', 'cpf', 'ctps', 'serie', 'pis', 'data_nasc',
         'nome_pai', 'nome_mae', 'endereco', 'bairro', 'cep', 'cidade', 'estado',
         'nome_filho1', 'cpf_filho1', 'data_nasc_filho1', 'nome_filho2', 'data_nasc_filho2', 'cpf_filho2',
-        'nome_banco', 'tipo_conta', 'agencia', 'numero_conta', 'tam_camisa', 'tam_calca', 'tam_sapato', 'user_id',
+        'nome_banco', 'tipo_conta', 'agencia', 'numero_conta', 'tam_camisa', 'tam_calca', 'tam_sapato', 'user_id', 'name',
     ];
 
     public function user()
