@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <h1>Crud Simples</h1>
 <p>Cadastro de E-mails, com exibição em lista.</p>
 <p>Cadastro de Ramais, com exibição em lista.</p>
