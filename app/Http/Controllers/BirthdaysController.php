@@ -37,7 +37,7 @@ class BirthdaysController extends Controller
             'data_nasc' => $request->data_nasc,
         ]);
 
-        return redirect ('/birthday')->with('msg', 'Ramal criado com Sucesso!');
+        return redirect ('/birthday')->with('msg', 'Aniversário criado com Sucesso!');
     }
 
     public function edit($id)

@@ -7,7 +7,7 @@
     <h4>INFORMAÇÕES DO CADASTRO</h4>
         
     </div>
-
+    
     <div class="container mt-2">
 
         <table class="table table-sm table-hover">
