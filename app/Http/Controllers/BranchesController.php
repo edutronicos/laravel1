@@ -10,11 +10,21 @@ class BranchesController extends Controller
 {
     public function index()
     {
-        $item = Branch::all();
+        $search = request('search');
 
-        //$dadosUsuario = User::where('id', $cadastr->user_id)->first()->toArray();
+        if($search){
+            $item = Branch::where('nome', 'like', '%'.$search.'%')->
+                            orWhere('ramal', 'like', '%'.$search.'%')->
+                            orWhere('setor', 'like', '%'.$search.'%')->get();
+        } else {
+            $item = Branch::all();
+        }
         
-        return view('branch.index', compact('item'));
+        
+
+        
+        
+        return view('branch.index', compact('item', 'search'));
     }
 
     public function create()

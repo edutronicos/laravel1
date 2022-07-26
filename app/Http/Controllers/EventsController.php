@@ -77,8 +77,8 @@ class EventsController extends Controller
 
     public function edit($id)
     {
-        $edits = Event::findOrFail($id);
-        return view ('events.edit', ['edits' => $edits]);
+        $item = Event::findOrFail($id);
+        return view ('events.edit', ['item' => $item]);
     }
 
     /*public function update(Request $request, $id)
@@ -96,14 +96,14 @@ class EventsController extends Controller
 
     public function delete($id)
     {
-        $edits = Event::findOrFail($id);
-        return view ('events.delete', ['edits' => $edits]);
+        $item = Event::findOrFail($id);
+        return view ('events.delete', ['item' => $item]);
     }
 
     public function destroy($id)
     {
-        $edits = Event::findOrFail($id);
-        $edits->delete();
+        $item = Event::findOrFail($id);
+        $item->delete();
 
         return redirect ('/events')->with('msg', 'Evento deletado com Sucesso!');
     }

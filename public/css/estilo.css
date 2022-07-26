@@ -27,3 +27,28 @@ img {
     max-height: 100%;
     padding: 3px;
 }
+
+.btn_css{
+
+    font-family: Roboto, sans-serif;
+    font-weight: 261;
+    font-size: 14px;
+    color: #fff;
+    background-color: #2a9d8f;
+    padding: 10px 30px;
+    border: none;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 50px;
+    transition : 1000ms;
+    transform: translateY(0);
+    }
+
+    .btn_css:hover{
+
+        transition : 1000ms;
+        padding: 10px 50px;
+        transform : translateY(-0px);
+        background-color: #fff;
+        color: #0066cc;
+        border: solid 2px #0066cc;
+        }

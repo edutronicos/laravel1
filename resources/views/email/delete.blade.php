@@ -9,7 +9,7 @@
     </div>
 
     <div class="container mt-5 mb-5">
-        <form class="row g-3 needs-validation" action="/email/delete/{{$edits->id}}" method="post">
+        <form class="row g-3 needs-validation" action="/emails/delete/{{$edits->id}}" method="post">
             @csrf
             <div class="row justify-content-center">
                 <div class="col-md-4">

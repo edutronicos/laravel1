@@ -12,8 +12,18 @@
             <div class="col-12">
                 <a href="/branch/new" class="btn btn-primary">Novo Ramal</a>
             </div>
+            
        
         
+    </div>
+    <div class="container">
+    <div class="row justify-content-center">
+    <div class="col-5 mt-2">
+        <form action="/branch" method="get">
+            <input class="form-control" type="search" name="search" id="search" placeholder="Pesquisar Nome, Ramal e Setor">
+        </form>
+    </div>
+    </div>
     </div>
 
     <div class="container mt-5">

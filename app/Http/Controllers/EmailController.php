@@ -11,11 +11,22 @@ class EmailController extends Controller
     
     public function index()
     {
-        $item = Email::all();
+        $search = request('search');
+
+        if($search)
+        {
+            $item = Email::where('nome', 'like', '%' . $search . '%')->
+                            orWhere('email', 'like', '%'. $search .'%')->
+                            orWhere('setor', 'like', '%'. $search .'%')->get();
+        }
+        else
+        {
+            $item = Email::all();
+        }
 
         //$dadosUsuario = User::where('id', $cadastr->user_id)->first()->toArray();
         
-        return view('email.index', compact('item'));
+        return view('email.index', compact('item', 'search'));
     }
 
     public function order($id)
