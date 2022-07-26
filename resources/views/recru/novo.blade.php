@@ -3,9 +3,20 @@
 @section('title', 'Início')
 
 @section('content')
+
+    @if ($errors->any())
+        <div class="container alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error )
+                <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
+                                                
     <div class="text-center p-2">
             <h1>Cadastro de Funcionários</h1>
-    </div>
+    </div>   
 
     <div class="container mt-5">
         
@@ -185,4 +196,6 @@
             </div>
         </form>
     </div>
+
+    
 @endsection

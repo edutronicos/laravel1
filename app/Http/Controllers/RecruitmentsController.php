@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Recruitment;
 use App\Models\User;
+use App\Http\Requests\RecruitmentRequest;
 
 class RecruitmentsController extends Controller
 {
@@ -13,7 +14,7 @@ class RecruitmentsController extends Controller
         return view('recru.novo');
     }
 
-    public function store(Request $request)
+    public function store(RecruitmentRequest $request)
     {
         $cadas = new Recruitment;
         $user = auth()->user();
