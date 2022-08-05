@@ -19,6 +19,7 @@
                     <th scope="col">Quem Cadastrou</th>
                     <th scope="col">ID</th>
                     <th scope="col">Ação</th>
+                    <th scope="col">PDF</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -31,6 +32,7 @@
                 <td>{{$cadastro->name}}</td>
                 <td>{{ $cadastro->id }}</td>
                 <td><a href="/recru/cadastro/{{ $cadastro->id }}" class="btn btn-primary">Abrir</a></td>
+                <td><a href="/pdf/{{ $cadastro->id }}" class="btn btn-primary">PDF</a></td>
         @endforeach
             </tr>
             </table>

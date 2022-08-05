@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Models\Recruitment;
 use App\Models\User;
 use App\Http\Requests\RecruitmentRequest;
+use Illuminate\Support\Facades\App;
+use PDF;
 
 class RecruitmentsController extends Controller
 {
@@ -85,5 +87,16 @@ class RecruitmentsController extends Controller
         //$dadosUsuario = User::where('id', $cadastr->user_id)->first()->toArray();
         
         return view('recru.lista', ['cadastr' => $cadastr,]);
+    }
+
+    public function pdf($id)
+    {
+        $cadastro = Recruitment::findOrFail($id);
+        
+        $pdf = Pdf::loadView('recru.cadastro', compact('cadastro'));
+        dd($pdf);
+        return $pdf->download('invoice.pdf');
+        //return $pdf->stream();
+        
     }
 }

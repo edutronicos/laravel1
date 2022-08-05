@@ -86,3 +86,5 @@ Route::get('/recru/lista', [RecruitmentsController::class, 'show2']);
 });*/
 
 Route::get('/dashboard', [BirthdaysController::class, 'index'])->middleware('auth');
+
+Route::get('/pdf/{id}', [RecruitmentsController::class, 'pdf']);
